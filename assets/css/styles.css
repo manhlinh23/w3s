@@ -1,0 +1,312 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+/* dung chung */
+.mt8{
+    margin-top: 8px;
+}
+.mt16{
+    margin-top: 16px;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full{
+    width: 100%;
+}
+.col-2{
+    width: 50%;
+}
+.col-3{
+    width: 33.333333%;
+}
+.text-center{
+    text-align: center;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.p6416{
+    padding: 64px 16px;
+}
+.text-white{
+    color: white !important;
+}
+p08{
+    padding: 0 8px;
+}
+/* dung chung */
+
+#header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 46px;
+    background-color: black;
+    z-index: 1;
+    overflow: hidden;
+}
+#nav{
+    display: inline-block;
+}
+#nav .nav-down{
+    font-size: 11px;
+}
+#nav > li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+#nav li {
+    position: relative;
+}
+#nav > li >  a {
+    color: white;
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
+    display: block;
+}
+#nav .sub-nav li:hover,
+#nav >  li:hover >  a {
+    color: black;
+    background-color: #ccc;
+}
+#nav li:hover .sub-nav{
+    display: block;
+}
+#nav .sub-nav{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    background-color: white;
+    min-width: 160px;
+}
+#nav .sub-nav a {
+    text-decoration: none;
+    padding: 0 12px;
+    color: black;
+    display: block;
+    line-height: 46px;
+    text-transform: capitalize;
+}
+.menu-btn,
+.search-btn{
+    float: right;
+    padding: 12px 24px;
+}
+.ti-menu{
+    color:white;
+    padding: 15px 22px;
+}
+.menu-btn:hover .menu-icon{
+    color: black;
+}
+
+}
+.search-icon{
+    color: white;
+    padding: 0px 24px;
+    line-height: 46px;
+}
+.menu-btn:hover{
+
+    background-color: #ccc;
+}
+.search-btn:hover{
+    background-color: red;
+    cursor: pointer;
+}
+#slider{
+    margin-top: 46px;
+    background: url(/assets/img/chicago.jpg) top center/cover no-repeat;
+    padding-top: 50%;
+    /* p50% de day hinh anh ra  */
+    position: relative;
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 0; 
+    /* bottom cho chu nhay len hinh anh slider */
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 47px;
+    font-size: 24px;
+}
+#slider .heading-text{
+
+}
+#slider .desc-text{
+padding-top: 25px;
+}
+
+#content .content-section{
+    text-align: center;
+    width: 800px;
+    /* mw de can chinh so voi chieu ngang dang co !=  */
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 16px;
+    padding-right: 16px; */
+}
+#content .heading-section{
+    font-size: 30px;
+    margin: 10px 0;
+    letter-spacing: 4px;
+}
+#content .sub-heading-section{
+    font-size: 15px;
+    margin: 15px 0;
+    opacity: 0.6;
+    font-style: italic;
+}
+#content .desc-section{
+    text-align: justify;
+}
+#content .member-list{
+    width: 100%;
+    margin-top: 47px;
+}
+#content .member-img{
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 10px; 
+}
+.tour{
+    background-color: black;
+}
+.ticket-list{
+    width: 100%;
+    background-color: white;
+    text-align: left;
+}
+.ticket-month{
+    border-bottom: 1px solid #ccc;
+    padding: 8px 16px;
+}
+.sold-out{
+    margin-left: 18px;
+    background-color: rgb(244, 67, 54);
+    padding: 2px 4px;
+    color: white;
+}
+.quantity{
+    float: right;
+    margin-right: 18px;
+    border-radius: 50%;
+    background-color: black;
+    padding-left: 8px;
+    padding-right: 7px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+.place-about{
+background-color: white;
+text-align: left;
+padding: 0 16px;
+}
+.place-list{
+    padding: 32px 0px;
+}
+.place-item{
+    padding: 0 8px;
+}
+.place-img{
+    width: 100%;
+    display: block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-name{
+    font-size: 15px;
+    padding: 15px 0;
+}
+.place-time{
+    padding-bottom: 15px;
+    opacity: 0.6;
+}
+.place-desc{
+    padding-bottom: 15px;
+    line-height: 1.5;
+}
+.buy-btn{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 6px 8px;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+.buy-btn:hover{
+    color: black;
+    background-color: #CCC;
+}
+.contact-about{
+    text-align: left;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 500;
+}
+.contact-about i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.form-action{
+    width: 100%;
+    padding: 8px 8px;
+}
+.send-btn{
+    float: right;
+    margin-top: 16px;
+    padding: 11px 19px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+.send-btn:hover{
+    color: black;
+    background-color: #ccc;
+}
+#footer{
+    margin: 64px 16px;
+    text-align: center;
+}
+.social-list{
+    font-size: 24px;
+}
+.social-list a {
+    color: black;
+    text-decoration: none;
+}
+.social-list a:hover{
+    opacity: 0.6;
+}
+.copy-right{
+    margin-top: 15px;
+    font-size: 15px;
+}
+.copy-right a{
+    color: black;
+}
+.copy-right a:hover{
+    opacity: 0.6;
+}

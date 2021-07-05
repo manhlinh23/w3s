@@ -1,0 +1,16 @@
+@media (max-width: 740px){
+    #nav > li {
+        display: block;
+    }
+    .search-btn{
+        display: none;
+    }
+}
+@media (min-width:740px){
+    #mobile-menu{
+        display: none;
+    }
+    #header{
+        overflow: visible;
+    }
+}
