@@ -109,6 +109,9 @@ p08{
 .search-btn{
     float: right;
     padding: 12px 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .ti-menu{
     color:white;
@@ -118,7 +121,7 @@ p08{
     color: black;
 }
 
-}
+
 .search-icon{
     color: white;
     padding: 0px 24px;

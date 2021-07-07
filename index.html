@@ -22,9 +22,10 @@
                     <li><a href="#band">band</a></li>
                     <li><a href="#tourr">tour</a></li>
                     <li><a href="#contact">contact</a></li>
-                    <li><a href="#">
+                    <li>
+                        <a href="#">
                         more <i class="nav-down ti-angle-down"></i> 
-                    </a>
+                         </a>
                         <ul class="sub-nav">
                             <li><a href="#">merchandise</a></li>
                             <li><a href="#">extras</a></li>
@@ -34,13 +35,15 @@
                     <!-- End Nav -->
             </ul>   
             <!-- Begin Search -->
+            <div id="mobile-menu" class="menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+            
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
             </div>
 
-            <div id="mobile-menu" class="menu-btn">
-                <i class="menu-icon ti-menu"></i>
-            </div>
+
             <!-- End Search --> 
         </div>
         <!-- end nav -->
@@ -201,8 +204,15 @@
             var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
             for ( var i=0; i<menuItems.length;i++){
                 var menuItem = menuItems[i];  
-                menuItem.onclick=function() {
-                    header.style.height=null;
+
+                menuItem.onclick=function(event) 
+                {
+                    var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('sub-nav');
+                    if(!isParentMenu) {
+                        header.style.height=null;
+                    } else {
+                        event.preventDefault();
+                    }                  
                 }
             }
 
