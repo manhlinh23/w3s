@@ -152,9 +152,7 @@ p08{
     padding-bottom: 47px;
     font-size: 24px;
 }
-#slider .heading-text{
 
-}
 #slider .desc-text{
 padding-top: 25px;
 }
@@ -227,10 +225,10 @@ text-align: left;
 padding: 0 16px;
 }
 .place-list{
-    padding: 32px 0px;
+    padding: 16px 0px;
 }
 .place-item{
-    padding: 0 8px;
+    margin: 16px 0px;
 }
 .place-img{
     width: 100%;
