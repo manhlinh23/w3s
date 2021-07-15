@@ -42,7 +42,7 @@
         width: 100%;
     }
     .contact-about{
-        margin-bottom: 16px;
+        margin-bottom: 32px;
     }
     .buy-btn,
     .send-btn{
@@ -62,4 +62,19 @@
     #header{
         overflow: visible;
     }
+}
+/* mobile vs tablet */
+@media (max-width: 1023px){
+    .social-list [class*="ti-"]{
+        margin: 0 8px;
+    }
+    .copy-right {
+        margin-top: 35px;
+        font-size: 20px;
+        display: inline-block;
+    }
+    
+.contact-about {
+    line-height: 2;
+}
 }

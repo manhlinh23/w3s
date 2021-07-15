@@ -147,6 +147,7 @@ p08{
     bottom: 0; 
     /* bottom cho chu nhay len hinh anh slider */
     color: white;
+    /* width va t-a-c deu giup chu can giua */
     text-align: center;
     width: 100%;
     padding-bottom: 47px;
@@ -275,6 +276,9 @@ padding: 0 16px;
     width: 100%;
     padding: 8px 8px;
 }
+.btn{
+    
+}
 .send-btn{
     float: right;
     margin-top: 16px;
@@ -294,6 +298,7 @@ padding: 0 16px;
 .social-list{
     font-size: 24px;
 }
+
 .social-list a {
     color: black;
     text-decoration: none;
